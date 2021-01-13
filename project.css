@@ -1,0 +1,66 @@
+body
+{
+ background-image: url("Image/grey.jpg");
+ background-size: cover;
+ opacity: 0.85;
+}
+.pTitle {
+    text-align: center;
+    font-size: 40px;
+    background-color: midnightblue;
+    color: mintcream;
+  
+}
+.main {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-gap: 7px;
+    margin-top: 10px;
+}
+
+.page1 {
+    background-color: lightgoldenrodyellow;
+}
+
+.page2 {
+    background-color:lightgoldenrodyellow;
+}
+
+.page3 {
+    background-color: lightgoldenrodyellow;
+}
+.text-center
+{
+    text-align: center;
+}
+.pic{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.info{
+    display: block;
+    background-color: midnightblue;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color:mintcream;
+    }
+.circuit{
+    display: block;
+    background-color: lightgoldenrodyellow;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(92, 20, 128);
+    }
+.price {
+        text-align: center;
+        font-size: 30px;
+        margin: 15px;
+    }
+.table{
+    display: block;
+    background-color: azure;
+    color: black;
+}

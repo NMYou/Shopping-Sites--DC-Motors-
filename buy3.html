@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="project1.css">
+        <script>
+            function myFunction(){
+                var tbl = document.getElementById("myTable");
+                var row = tbl.insertRow();
+                var cell1 = row.insertCell();
+                var cell2 = row.insertCell();
+                var cell3 = row.insertCell();
+                var cell4 = row.insertCell();
+                var cell5 = row.insertCell();
+                var cell6 = row.insertCell();
+
+                cell1.innerHTML = document.getElementById("pName").value;
+                cell2.innerHTML = document.getElementById("pEmail").value;
+                cell3.innerHTML = document.getElementById("pid").value;
+                cell4.innerHTML = document.getElementById("pDesc").value;
+                cell5.innerHTML = document.getElementById("pQuantity").value;
+                cell6.innerHTML = document.getElementById("pDate").value;
+
+                window.open('https://www.amazon.in/xcluma-motor-controller-switch-function/dp/B07W99BJPC/ref=sr_1_2?crid=1O8835DQUJ26M&dchild=1&keywords=dc+motor+speed+controller&qid=1596108331&sprefix=dc+motor+%2Caps%2C377&sr=8-2', '_blank');
+            }
+
+        </script>
+    </head>
+    <body>
+        <fieldset>  
+        <form onsubmit="myFunction(); return false;" required>
+            <h1> Choose Product Details</h1>
+            <input type="text" id ="pName" placeholder="Enter your Full Name" required /><br/>
+            <input type="text" id ="pEmail" placeholder="Enter your Email ID" required /><br/>
+            <input type="text" id ="pid" placeholder="Enter the Product ID" required /><br/>
+            <select id="pDesc">
+            <option>-- Select Product Description --</option>
+            <!-- <option>DC Motor PWM Speed Regulator</option> 
+            <option>PWM DC Controller Adjustable Speed Controller</option>   -->
+            <option>xcluma PWM DC motor controller</option> 
+            <!-- <option>Adjustable motor and speed regulator EMG</option> 
+            <option>Robodo SEN51 PWM DC Motor Speed Regulator</option> 
+            <option>UCTRONICS Stepless DC Motor Controller</option>  -->
+            </select> </br> 
+            <input type="number" id ="pQuantity" min=1 placeholder="Enter the Product Quantity" required /><br/>
+            <input type="date" id ="pDate" placeholder="Enter the Order Date" required /><br/>
+        
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Clear"/>
+        </form>
+        </fieldset>
+        
+        <h1>Product Details</h1>
+        <table border=1 id="myTable">
+            <tr>
+                <td>Full Name</td>
+                <td>Email ID</td>
+                <td>Product ID</td>
+                <td>Product Description</td>
+                <td>Quantity</td>
+                <td>Order Date</td>
+            </tr>
+    </body>
+    
+</html>
